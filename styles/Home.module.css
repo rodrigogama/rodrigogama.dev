@@ -75,7 +75,8 @@
 .textLine a {
   filter: invert(0);
   border-bottom: .15vw solid;
-  transition: all 150ms cubic-bezier(0.050,0.760,0.380,1.015);
+  transition: color 150ms cubic-bezier(0.050,0.760,0.380,1.015),
+    filter 150ms cubic-bezier(0.050,0.760,0.380,1.015);
 }
 
 .textLine a:hover {
