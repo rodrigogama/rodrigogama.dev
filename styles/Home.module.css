@@ -22,23 +22,19 @@
   height: auto;
   will-change: transform;
   min-height: 100vh;
-  min-height: calc(1vh * 100);
-  min-height: calc(var(--vh, 1vh) * 100);
   mix-blend-mode: difference;
 }
 
 .splashHero {
   position: relative;
   height: 100vh;
-  height: calc(1vh * 100);
-  height: calc(var(--vh, 1vh) * 100);
+  width: 70vw;
   color: #fff;
 }
 
 .textWrapper {
   margin: auto;
   position: relative;
-  width: 70vw;
   height: 100%;
 }
 
@@ -122,4 +118,28 @@
   display: inline-block;
   height: 100%;
   padding: 0 12px;
+}
+
+@media (max-width: 767px) and (orientation: portrait) {
+  .container {
+    width: calc(100vw - 32px);
+  }
+
+  .splashHero {
+    width: 100%;
+  }
+
+  .textDescription {
+    font-size: 8vw;
+  }
+
+  .textLine {
+    white-space: normal;
+  }
+
+  .titleContainer {
+    font-size: 7vw;
+    line-height: 10vw;
+    bottom: 15vw;
+  }
 }

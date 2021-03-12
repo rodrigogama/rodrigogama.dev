@@ -3,14 +3,6 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 
 const Home = () => {
-  React.useLayoutEffect(() => {
-    if (window) {
-      document
-        .querySelector('html')
-        .setAttribute('style', `--vh: ${0.01 * window.innerHeight}px`);
-    }
-  }, []);
-
   return (
     <>
       <Head>
