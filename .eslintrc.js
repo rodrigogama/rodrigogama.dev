@@ -66,6 +66,7 @@ module.exports = {
     'prettier/prettier': [
       'error',
       { singleQuote: true },
+      { printWidth: 100 },
       { usePrettierrc: true },
     ], // Use our .prettierrc file as source
   },
