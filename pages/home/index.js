@@ -116,16 +116,6 @@ const Home = () => {
             </p>
             <div className="w-75-l w-100 mt4 fr-l pl3-l">
               <p className="lh-title f2-l f3 fw4 pt4 bt ">
-                {/* {`I position myself as a Creative Director, but I'm always happy
-                  to craft ideas and visions with my Designer's hands `}
-                <span className="dib">
-                  <img
-                    src="https://loveiko.com/img/hands.png"
-                    alt="hands emoji"
-                    className="dib h2-5-l h2 v-mid pb2"
-                  />
-                </span>
-                {` I stand for a good human story, delivered in the most offbeat way.`} */}
                 Morbi accumsan eleifend odio. In lobortis arcu ut lacus tempus, sit amet pretium lorem accumsan. Nam a enim vel sem imperdiet dictum vel vitae mauris. Sed hendrerit nunc metus, vitae fermentum nibh vestibulum non. Maecenas nec ultricies lectus, et faucibus libero.
               </p>
               <p className="lh-title f2-l f3 fw4 pt4 ">
