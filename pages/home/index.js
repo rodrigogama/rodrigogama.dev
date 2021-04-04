@@ -10,7 +10,7 @@ import {
   SwiperContainer,
   SwiperSlideContent,
   SwipperScrollbar,
-} from './styles';
+} from '../../styles/pages/home';
 
 // install Swiper modules
 SwiperCore.use([Scrollbar, Mousewheel]);
