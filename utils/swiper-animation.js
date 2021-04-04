@@ -1,4 +1,4 @@
-import { TimelineLite } from 'gsap';
+import { TimelineLite } from 'gsap/dist/gsap';
 import { getElementHeight, getElementWidth } from '../utils';
 
 class SwiperAnimation {
