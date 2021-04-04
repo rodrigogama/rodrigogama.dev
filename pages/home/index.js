@@ -18,7 +18,6 @@ SwiperCore.use([Scrollbar, Mousewheel]);
 const Home = () => {
   const hasInitialized = React.useRef(false);
   const SwiperAnimationRef = React.useRef(null);
-  const [isMobile, setIsMobile] = React.useState(false);
 
   const handleOnSwiper = swiper => {
     if (!hasInitialized.current) {
@@ -38,15 +37,6 @@ const Home = () => {
     }
   };
 
-  React.useEffect(() => {
-    const handler = e => setIsMobile(Boolean(e.matches));
-
-    const mql = window.matchMedia("(max-width: 1024px)");
-    mql.addEventListener('change', handler);
-
-    setIsMobile(Boolean(mql.matches))
-  }, []);
-
   return (
     <MainContainer className="main__container">
       <SwiperContainer
@@ -55,7 +45,7 @@ const Home = () => {
         direction="vertical"
         freeMode
         mousewheel={{ eventsTarget: '.main__container' }}
-        touchRatio={isMobile ? 1 : 0}
+        touchRatio={1}
         watchSlidesProgress
         scrollbar={{
           dragSize: 100,
